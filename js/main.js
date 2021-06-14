@@ -58,8 +58,6 @@ const LOCATION = {
   lang: getRandomNumberFloat(139.70000, 139.80000, 5),
 };
 
-// const SIMILAR_ADVERTISEMENT_COUNT = 4;
-
 function createAdvertisement() {
   return {
     avatar: AUTOR.avatar[getRandomNumberInt(0, AUTOR.avatar.length - 1)],
@@ -79,4 +77,3 @@ function createAdvertisement() {
   };
 }
 createAdvertisement();
-// const similarAdvertisements = new Array(SIMILAR_ADVERTISEMENT_COUNT).fill(null).map(() => createAdvertisement());
