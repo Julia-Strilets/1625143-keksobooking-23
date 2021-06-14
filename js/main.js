@@ -80,4 +80,3 @@ function createAdvertisement() {
 }
 
 const similarAdvertisements = new Array(SIMILAR_ADVERTISEMENT_COUNT).fill(null).map(() => createAdvertisement());
-console.log(similarAdvertisements);
