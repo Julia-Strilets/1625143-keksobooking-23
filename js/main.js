@@ -72,8 +72,8 @@ function createAdvertisement() {
     features: OFFER.features[getRandomNumberInt(0, OFFER.features.length - 1)],
     description: OFFER.description,
     photos: OFFER.photos[getRandomNumberInt(0, OFFER.photos.length - 1)],
-    lat: +LOCATION.lat,
-    lang: +LOCATION.lang,
+    lat: parseFloat(LOCATION.lat),
+    lang: parseFloat(LOCATION.lang),
   };
 }
 createAdvertisement();
