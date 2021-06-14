@@ -49,7 +49,7 @@ const OFFER = {
   photos : [
     'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/duonguyen-8LrGtIxxa4w.jpg',
     'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/brandon-hoogenboom-SNxQGWxZQi0.jpg',
-    'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg'
+    'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg',
   ],
 };
 
@@ -57,10 +57,10 @@ const LOCATION = {
   lat : getRandomNumberFloat(35.650000, 35.70000, 5),
   lang: getRandomNumberFloat(139.70000, 139.80000, 5),
 };
-const SIMILAR_ADVERTISEMENT_COUNT = 4;
+
+// const SIMILAR_ADVERTISEMENT_COUNT = 4;
 
 function createAdvertisement() {
-
   return {
     avatar: AUTOR.avatar[getRandomNumberInt(0, AUTOR.avatar.length - 1)],
     title: OFFER.title,
@@ -78,5 +78,5 @@ function createAdvertisement() {
     lang: +LOCATION.lang,
   };
 }
-
-const similarAdvertisements = new Array(SIMILAR_ADVERTISEMENT_COUNT).fill(null).map(() => createAdvertisement());
+createAdvertisement();
+// const similarAdvertisements = new Array(SIMILAR_ADVERTISEMENT_COUNT).fill(null).map(() => createAdvertisement());
